@@ -1,11 +1,36 @@
 @tailwind base;
 @tailwind components;
 html, body{
-    @apply m-0 p-0 w-[100%] h-[100%] bg-white;
+    @apply m-0 p-0 w-[100%] h-[100%] overflow-y-auto bg-white;
 }
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
     :root{
         font-size: 12px
     }
+} */
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-100%);
 }
+.hamburger{
+    position: fixed;
+    top: 2.5rem;
+    right: 1rem;
+}
+.show-menu{
+    transform: translateY(0);
+}
+#close-icon{
+    display: none;
+}
+/* @media screen and (max-width: 768px){
+    .logo{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+} */
 @tailwind utilities;

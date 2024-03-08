@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body class="pt-[2.8rem]">
+<body class="lg:pt-[2.8rem] pt-[2.5rem]">
     <!-- Desktop view -->
-    <header class="flex items-center justify-between ml-[5rem]">
+    <header class="flex items-center justify-between lg:ml-[5rem] ml-[1.5rem]">
         <div class="flex items-center gap-[0.7rem]">
-            <img src="../Images/Group.svg" alt="Male and Female logo" class="w-[2.5rem] h-[2.5rem]">
-            <h6 class="font-bold text-[2rem]">SAFE REFUGE</h6>
+            <img src="../Images/Group.svg" alt="Male and Female logo" class="logo lg:w-[2.5rem] w-[1.8rem] lg:h-[2.5rem] h-[1.8rem]">
+            <h6 class="font-bold lg:text-[2rem] text-[1.5rem]">SAFE REFUGE</h6>
         </div>
-        <nav class="flex justify-end items-center gap-[3.4rem] mr-[5.1rem]">
+        <nav class="lg:flex hidden justify-end items-center gap-[3.4rem] mx-[16rem]">
             <button class="font-bold text-[1.5rem]"><a target="_blank" href="./index.html">Home</a></button>
             <button class="text-[1.5rem]"><a target="_blank" href="./blog.html" class="hover:border-b-[0.2rem] active:text-[#C837AB]">Blogs</a></button>
             <!-- <button class="text-[1.5rem]"><a target="_blank" href="">Events</a></button> -->
-            <button class="w-[9.4rem] h-[3.1rem] bg-[#C837AB] rounded-[6.3rem] text-center justify-center items-center text-[#FFFFFF] text-[1.1rem]"><a target="_blank" href="" class="hover:border-b-[0.2rem] active:text-black">Contact Us</a></button>
         </nav>
+        <button class="lg:flex hidden w-[9.4rem] h-[3.1rem] bg-[#C837AB] rounded-[6.3rem] text-center justify-center items-center text-[#FFFFFF] text-[1.1rem] mr-[5.1rem]"><a target="_blank" href="" class="hover:border-b-[0.2rem] active:text-black">Contact Us</a></button>
     </header>
+    <nav class="menu lg:hidden block gap-[3.4rem] mx-[16rem]">
+        <button class="text-[1.5rem]"><a target="_blank" href="./index.html">Home</a></button>
+        <button class="text-[1.5rem]"><a target="_blank" href="./blog.html" class="hover:border-b-[0.2rem] active:text-[#C837AB]">Blogs</a></button>
+        <!-- <button class="text-[1.5rem]"><a target="_blank" href="">Events</a></button> -->
+        <button class="text-[1.5rem]"><a target="_blank" href="./contact.html" class="hover:border-b-[0.2rem] active:text-[#C837AB]">Contact Us</a></button>
+    </nav>
+    <button class="hamburger lg:hidden block">
+        <img src="../Images/menu.svg" alt="menu Icon" class="w-[2rem] h-[2rem]" id="menu-icon">
+        <img src="../Images/close.svg" alt="close Icon" class="" id="close-icon">
+    </button>
     <section class="mt-[7.6rem] flex items-center justify-between mr-[4.9rem] ml-[5rem]">
         <section>
             <div class="w-26.2rem">
@@ -33,7 +44,7 @@
         </section>
         <img src="../Images/Frame 7.svg" alt="Image of people" class="w-[37.6rem] h-[30.5rem]">
     </section>
-    <section class="ml-[5rem] mt-[7rem] flex items-end mr-[rem] justify-between gap-[4.8rem]">
+    <section class="ml-[5rem] mt-[7rem] flex items-end mr-[4.9rem] justify-between gap-[4.8rem]">
       <section>
         <div>
             <h5 class="text-[2.5rem] font-bold">Core Services</h5>
@@ -71,9 +82,9 @@
             <p class="mb-[2.3rem] text-[#757575] text-[1.1rem]">Promote education on topics such as consent, gender equality.</p>
             <button class="w-[10rem] h-[3.8rem] bg-[#C837AB] text-[1.1rem] text-[#FFFFFF] rounded-[6.3rem]"><a target="_blank" href="https://www.tuni.fi/en/research/education-and-raising-awareness-schools-prevent-and-encounter-gender-based-violence" class="active:text-black">Learn more</a></button>
         </div>
-        <div class="w-[25.8rem] h-[16.1rem] bg-[#F6F6F6] rounded-[1.3rem] py-[0.6rem] px-[1.6rem]">
-            <h5 class="font-bold text-[1.5rem] mb-[1.1rem]">Empowerment of Women and Girls</h5>
-            <p class="text-[1.1rem] text-[#757575] mb-[1.5rem]">Adressing the root causes of SGBV often involve empowering women and girls.</p>
+        <div class="w-[25.8rem] h-[16.1rem] bg-[#F6F6F6] rounded-[1.3rem] py-[2.3rem] px-[1.6rem]">
+            <h5 class="font-bold text-[1.5rem] mb-[1.1rem]">Empowerment of Females</h5>
+            <p class="text-[1.1rem] text-[#757575] mb-[2.3rem]">Adressing the root causes of SGBV often involve empowering women and girls.</p>
             <button class="w-[10rem] h-[3.8rem] bg-[#C837AB] text-[#FFFFFF] rounded-[6.3rem]"><a target="_blank" href="https://sudan.un.org/en/20285-empowering-survivors-gender-based-violence" class="active:text-black">Learn more</a></button>
         </div>
         <div class="w-[25.8rem] h-[16.1rem] bg-[#F6F6F6] rounded-[1.3rem] py-[2.3rem] px-[1.6rem]">
@@ -144,41 +155,28 @@
          </div>
          <div>
             <h5 class="font-bold text-[2rem] text-[#FFFFFF] mb-[1.1rem]">Company</h5>
-            <p class="text-[1rem] text-[#FFFFFF] mb-[1.6rem]"><a target="_blank" href="Blogs.html" class="active:text-black">Blogs</a></p>
+            <p class="text-[1rem] text-[#FFFFFF] mb-[1.6rem]"><a target="_blank" href="./blog.html" class="active:text-black">Blogs</a></p>
             <p class="text-[1rem] text-[#FFFFFF] mb-[1.6rem]"><a href="">Press</a></p>
-            <p class="text-[1rem] text-[#FFFFFF]"><a target="_blank" href="About.html" class="active:text-black">About Us</a></p>
+            <p class="text-[1rem] text-[#FFFFFF]"><a target="_blank" href="about.html" class="active:text-black">About Us</a></p>
          </div>
          <div>
             <h5 class="font-bold text-[2rem] text-[#FFFFFF] mb-[1.1rem]">Help</h5>
-            <p class="text-[1rem] text-[#FFFFFF] mb-[1.6rem]"><a target="_blank" href="Contact.html" class="active:text-black"></a>Contact</p>
+            <p class="text-[1rem] text-[#FFFFFF] mb-[1.6rem]"><a target="_blank" href="contact.html" class="active:text-black">Contact</a></p>
             <p class="text-[1rem] text-[#FFFFFF] mb-[1.6rem]"><a href="./faqs.html" class="active:text-black">FAQs</a></p>
             <p class="text-[1rem] text-[#FFFFFF]">Get Help</p>
          </div>
         </div>
         <div>
             <h5 class="font-bold text-[2rem] text-[#FFFFFF] mb-[1.1rem]">Addresses</h5>
-            <p class="text-[1rem] text-[#FFFFFF]">NO. 35
-            <p class="text-[1rem] text-[#FFFFFF] mb-[1.6rem]">Jimoh Kole Street, zango area, ilorin,<br>Kwara State.</p>
-            <p class="text-[1rem] text-[#FFFFFF]">GRA, Awolowo Road, Ilorin, Kwara State</p>
+            <p class="w-[24.1rem] h-[3rem] text-[1rem] text-white">The city of Refugee. No 14, Station <br> Road, Along Royalton Hotel, GRA, Ilorin.</p>
         </div>
        </section>
 
         <div class="w-[25.4rem] h-[3.9rem] bg-white rounded-[2.5rem] mt-[7.6rem] relative float-end mr-[1.8rem]">
-            <input type="email" placeholder="Enter your email" required class="input bg-transparent ml-[0.9rem] text-[1.3rem] my-[1.03rem] font-[Inter] text-[#000000]">
+            <input type="email" placeholder="Enter your email" required class="input bg-transparent ml-[0.9rem] text-[1rem] my-[1.03rem] font-[Inter] text-[#000000]">
             <button type="submit" class="w-[8.3rem] h-[2.rem] bg-[#E12BDA] rounded-[2.5rem] text-[#FFFFFF] text-[1.1rem] px-[1.5rem] py-[0.6rem] absolute top-[0.6rem] right-[0.9rem]">Subscribe</button>
         </div>
     </footer>
-    <!-- <header class="flex items-center justify-between ml-[5rem]">
-        <div class="flex items-center gap-[0.7rem]">
-            <img src="../Images/Group.svg" alt="Male and Female logo" class="w-[2.5rem] h-[2.5rem]">
-            <h6 class="font-bold text-[2rem]">SAFE REFUGE</h6>
-        </div>
-        <nav class="flex justify-end items-center gap-[3.4rem] mr-[5.1rem]">
-            <button class="font-bold text-[1.5rem]"><a target="_blank" href="">Home</a></button>
-            <button class="text-[1.5rem]"><a target="_blank" href="Blogs.html" class="hover:border-b-[0.2rem] active:text-[#C837AB]">Blogs</a></button>
-            <button class="text-[1.5rem]"><a target="_blank" href="">Events</a></button> -->
-            <!-- <button class="w-[9.4rem] h-[3.1rem] bg-[#C837AB] rounded-[6.3rem] text-center justify-center items-center text-[#FFFFFF] text-[1.1rem]"><a target="_blank" href="" class="hover:border-b-[0.2rem] active:text-black">Contact Us</a></button>
-        </nav>
-    </header> -->
+    <script src="./main.js"></script>
 </body>
 </html>
