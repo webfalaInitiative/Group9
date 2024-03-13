@@ -3,19 +3,8 @@
 html, body{
     @apply m-0 p-0 w-[100%] h-[100%] overflow-y-auto bg-white;
 }
-.logo{
-    @apply text-[2rem];
-}
 
-.button{
-    @apply text-[1.1rem];
-    border-radius: 6.25rem;
-}
-@media screen and (max-width: 768px){
-    :root{
-        font-size: 12px
-    }
-} */
+
 .menu{
     position: fixed;
     top: 0;
@@ -23,6 +12,7 @@ html, body{
     right: 0;
     bottom: 0;
     transform: translateY(-100%);
+    padding-top: 1rem;
 }
 .hamburger{
     position: fixed;
