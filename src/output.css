@@ -564,8 +564,82 @@ html, body {
   padding-top: 1rem;
 }
 
+.mt-\[1\.9rem\] {
+  margin-top: 1.9rem;
+}
+
+.mt-\[16rem\] {
+  margin-top: 16rem;
+}
+
+.mt-\[2\.5rem\] {
+  margin-top: 2.5rem;
+}
+
+.mt-\[2\.9rem\] {
+  margin-top: 2.9rem;
+}
+
+.mt-\[5\.3rem\] {
+  margin-top: 5.3rem;
+}
+
+.mt-\[7\.5rem\] {
+  margin-top: 7.5rem;
+}
+
+.mt-\[7\.6rem\] {
+  margin-top: 7.6rem;
+}
+
+.mr-\[5\.1rem\] {
+  margin-right: 5.1rem;
+}
+
+.mt-\[1\.5rem\] {
+  margin-top: 1.5rem;
+}
+
+.mt-\[2\.8rem\] {
+  margin-top: 2.8rem;
+}
+
+.mb-\[0\.6rem\] {
+  margin-bottom: 0.6rem;
+}
+
+.mb-\[1\.5rem\] {
+  margin-bottom: 1.5rem;
+}
+
+.mb-\[2\.3rem\] {
+  margin-bottom: 2.3rem;
+}
+
+.mb-\[2\.5rem\] {
+  margin-bottom: 2.5rem;
+}
+
+.mr-\[4\.9rem\] {
+  margin-right: 4.9rem;
+}
+
+.mr-\[7\.6rem\] {
+  margin-right: 7.6rem;
+}
+
+.mr-\[rem\] {
+  margin-right: rem;
+}
+
+.mt-\[1\.4rem\] {
+  margin-top: 1.4rem;
+}
+
 #close-icon{
   display: none;
+  width: 2rem;
+  height: 2rem;
 }
 
 .hamburger{

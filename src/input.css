@@ -14,6 +14,8 @@ html, body{
 }
 #close-icon{
     display: none;
+    width: 2rem;
+    height: 2rem;
 }
 .hamburger{
     position: fixed;
