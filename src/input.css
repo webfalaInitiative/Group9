@@ -3,16 +3,19 @@
 html, body{
     @apply m-0 p-0 w-[100%] h-[100%] overflow-y-auto bg-white;
 }
-
-
 .menu{
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
+    left: 0;
     bottom: 0;
     transform: translateY(-100%);
     padding-top: 1rem;
+}
+#close-icon{
+    display: none;
+    width: 2rem;
+    height: 2rem;
 }
 .hamburger{
     position: fixed;
@@ -22,13 +25,17 @@ html, body{
 .show-menu{
     transform: translateY(0);
 }
-#close-icon{
-    display: none;
+/* .logo{
+    @apply text-[2rem];
 }
-/* @media screen and (max-width: 768px){
-    .logo{
-        width: 1.8rem;
-        height: 1.8rem;
+
+.button{
+    @apply text-[1.1rem];
+    border-radius: 6.25rem;
+}
+@media screen and (max-width: 768px){
+    :root{
+        font-size: 12px
     }
 } */
 @tailwind utilities;
