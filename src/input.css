@@ -14,13 +14,12 @@ html, body{
 }
 #close-icon{
     display: none;
-    width: 2rem;
-    height: 2rem;
+    
 }
-.icons{
+.hamburger{
     position: fixed;
     top: 2.5rem;
-    right: 0.5%;
+    right: 1rem;
 }
 .show-menu{
     transform: translateY(0);
