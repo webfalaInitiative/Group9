@@ -1,9 +1,31 @@
 @tailwind base;
 @tailwind components;
 html, body{
-    @apply m-0 p-0 w-[100%] h-[100%] bg-white;
+    @apply m-0 p-0 w-[100%] h-[100%] overflow-y-auto bg-white;
 }
-.logo{
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateY(-100%);
+    padding-top: 1rem;
+}
+#close-icon{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+}
+.icons{
+    position: fixed;
+    top: 2.5rem;
+    right: 0.5%;
+}
+.show-menu{
+    transform: translateY(0);
+}
+/* .logo{
     @apply text-[2rem];
 }
 
@@ -15,5 +37,5 @@ html, body{
     :root{
         font-size: 12px
     }
-}
+} */
 @tailwind utilities;
