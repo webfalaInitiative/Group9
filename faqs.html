@@ -7,79 +7,90 @@
     <title>Document</title>
 </head>
 <body class="pt-[2.8rem]">
-    <header class="flex items-center justify-between ml-[5rem]">
+    <header class="flex items-center justify-between lg:mx-[5rem] mx-[1.5rem]">
         <div class="flex items-center gap-[0.7rem]">
-            <img src="../Images/Group.svg" alt="Male and Female logo" class="w-[2.5rem] h-[2.5rem]">
-            <h6 class="font-bold text-[2rem]">SAFE REFUGE</h6>
+            <img src="../Images/Group.svg" alt="Male and Female logo" class="lg:w-[2.5rem] w-[1.8rem] lg:h-[2.5rem] h-[1.8rem]">
+            <h6 class="font-bold lg:text-[2rem] text-[1.5rem]">SAFE REFUGE</h6>
         </div>
-        <nav class="flex justify-end items-center gap-[3.4rem] mx-[16rem]">
-            <button class="font-bold text-[1.5rem]"><a target="_blank" href="./index.html">Home</a></button>
-            <button class="text-[1.5rem]"><a target="_blank" href="./blog.html" class="hover:border-b-[0.2rem] active:text-[#C837AB]">Blogs</a></button>
+        <nav class="lg:flex hidden justify-end items-center gap-[3.4rem] mx-[16rem]">
+            <button class=" text-[1.5rem]"><a target="_blank" href="./index.html" class="active:font-bold">Home</a></button>
+            <button class="text-[1.5rem] font-bold"><a target="_blank" href="./blog.html" class="hover:border-b-[0.2rem] active:text-[#C837AB]">Blogs</a></button>
             <!-- <button class="text-[1.5rem]"><a target="_blank" href="">Events</a></button> -->
         </nav>
-        <button class="w-[9.4rem] h-[3.1rem] bg-[#C837AB] rounded-[6.3rem] text-center justify-center items-center text-[#FFFFFF] text-[1.1rem] mr-[5.1rem]"><a target="_blank" href="./contact.html" class="hover:border-b-[0.2rem] active:text-black">Contact Us</a></button>
+        <button class="lg:flex hidden w-[9.4rem] h-[3.1rem] bg-[#C837AB] rounded-[6.3rem] text-center justify-center items-center text-[#FFFFFF] text-[1.1rem]"><a target="_blank" href="./contact.html" class="hover:border-b-[0.2rem] active:text-black">Contact Us</a></button>
     </header>
-    <section class="mt-[2.8rem] ml-[5rem]">
+    <nav class="menu lg:hidden block mx-[16rem]">
+        <button class="text-[1rem]"><a target="_blank" href="./index.html">Home</a></button>
+        <button class="text-[1rem]"><a target="_blank" href="./blog.html" class="hover:border-b-[0.2rem] active:text-[#C837AB]">Blogs</a></button>
+        <!-- <button class="text-[1.5rem]"><a target="_blank" href="">Events</a></button> -->
+        <button class="text-[1rem]"><a target="_blank" href="./contact.html" class="hover:border-b-[0.2rem] active:text-[#C837AB]">Contact Us</a></button>
+    </nav>
+    <button class="hamburger lg:hidden block">
+        <img src="../Images/menu.svg" alt="menu Icon" class="w-[2rem] h-[2rem]" id="menu-icon">
+        <img src="../Images/close.svg" alt="close Icon" class="w-[2rem] h-[2rem]" id="close-icon">
+    </button>
+    <section class="lg:mt-[2.8rem] mt-[1.5rem] lg:ml-[5rem] ml-[1.5rem]">
     <div>
-        <h5 class="font-semibold text-[2rem]">FAQS section</h5>
-        <p class="text[1.5rem] text-[#757575]">Answers to common Questions about SGBV and the SafeRefuge Community</p>
+        <h5 class="font-semibold lg:text-[2rem] text-[1.3rem]">FAQS section</h5>
+        <p class="lg:text-[1.5rem] text-[1rem] text-[#757575]">Answers to common Questions about SGBV and the SafeRefuge Community</p>
+    </div>
+    <div class="mt-[1.5rem] ">
+        <p class="font-[inter] font-black ">What is Sexual and Gender-Based Violence (SGBV)?</p>
+        <p class="lg:text-[1rem] text-[0.7rem]">SGBV refers to any act that is perpetrated against a person’s will and is based on gender norms and unequal power relationships.</p>
     </div>
     <div class="mt-[1.5rem]">
-        <p class="font-[inter] font-black">What is Sexual and Gender-Based Violence (SGBV)?</p>
-        <p>SGBV refers to any act that is perpetrated against a person’s will and is based on gender norms and unequal power relationships.</p>
-    </div>
-    <div class="mt-[1.5rem]">
-        <p class="font-[inter] font-black">Who is affected by SGBV?</p>
-        <p>SGBV can affect anyone regardless of age, gender, sexual orientation, race, religion, or socioeconomic status.</p>
+        <p class="font-[inter] font-black ">Who is affected by SGBV?</p>
+        <p class="lg:text-[1rem] text-[0.7rem]">SGBV can affect anyone regardless of age, gender, sexual orientation, race, religion, or socioeconomic status.</p>
     </div>
     <div class="mt-[1.5rem]">
         <p class="font-[inter] font-black">How can I get involved in raising awareness about SGBV?</p>
-        <p>You can participate in awareness campaigns, volunteer with organizations working on SGBV issues, organize community events.</p>
+        <p class="lg:text-[1rem] text-[0.7rem]">You can participate in awareness campaigns, volunteer with organizations working on SGBV issues, organize community events.</p>
     </div>
     </section>
-    <footer class="mt-[7.5rem] w-[85rem] h-[32.2rem] bg-[#801675] pt-[3.1rem]">
-        <section class="flex gap-[3.1rem]">
-         <div class="ml-[4.8rem]">
+    <footer class="lg:mt-[7.5rem] mt-[2.5rem] lg:w-[85rem] w-[23.4rem] lg:h-[32.2rem] h-fit bg-[#801675] lg:pt-[4.5rem] py-[2.3rem] lg:pl-0 pl-[1rem]">
+        <section class="lg:flex gap-[3.1rem]">
+         <div class="lg:ml-[4.8rem]">
            <div class="flex gap-[0.7rem] items-center">
-             <img src="../Images/Group.svg" alt="Logo image" class="w-[2.5rem] h-[2.5rem]">
-             <h5 class="font-bold text-[2rem] text-[#FFFFFF]">Safe Refuge</h5>
+             <img src="../Images/Group (2).svg" alt="Logo image" class="lg:w-[2.5rem] w-[1.3rem] lg:h-[2.5rem] h-[1.3rem]">
+             <h5 class="font-bold lg:text-[2rem] text-[1rem] text-[#FFFFFF]">Safe Refuge</h5>
            </div>
-           <div class="flex items-center gap-[2.8rem] mt-[1.3rem]">
-             <a target="_blank" href="https://www.facebook.com/webfalainitiative?mibextid=LQQJ4d"><img src="../Images/Frame 246.svg" alt="Face-book logo" class="w-[3rem] h-[3rem]"></a>
-             <a target="_blank" href="https://x.com/webfalainitiat1"><img src="../Images/Frame 247.svg" alt="Twitter logo" class="w-[3rem] h-[3rem]"></a>
-             <a target="_blank" href="https://www.instagram.com/webfalainitiative?igsh=MzRlODBiNWFlZA=="><img src="../Images/skill-icons_instagram.svg" alt="Instagram" class="w-[3rem] h-[3rem]"></a>
+           <div class="flex items-center lg:gap-[2.8rem] gap-[0.5rem] mt-[1.3rem]">
+             <a target="_blank" href="https://www.facebook.com/webfalainitiative?mibextid=LQQJ4d"><img src="./Images/Frame 246 (2).svg" alt="Face-book logo" class="lg:w-[3rem] w-[1.9rem] lg:h-[3rem] h-[1.9rem]"></a>
+             <a target="_blank" href="https://x.com/webfalainitiat1"><img src="./Images/Frame 247 (1).svg" alt="Twitter logo" class="lg:w-[3rem] w-[1.9rem] lg:h-[3rem] h-[1.9rem]"></a>
+             <a target="_blank" href="https://www.instagram.com/webfalainitiative?igsh=MzRlODBiNWFlZA=="><img src="./Images/Frame 248.svg" alt="Instagram" class="lg:w-[3rem] w-[1.9rem] lg:h-[3rem] h-[1.9rem]"></a>
            </div>
          </div>
-         <div class="flex gap-[3.3rem]">
-          <div>
-             <h5 class="font-bold text-[2rem] text-[#FFFFFF] mb-[1.1.rem]">Phone number</h5>
-             <p class="text-[1rem] text-[#FFFFFF]">08067373376</p>   
-             <p class="text-[1rem] text-[#FFFFFF]">08131559252</p>     
-             <p class="text-[1rem] text-[#FFFFFF]">09036610272</p>
+         <div class="lg:flex gap-[3.3rem]">
+          <div class="lg:mt-0 mt-[2.6rem]">
+             <h5 class="font-bold lg:text-[2rem] text-[0.8rem] text-[#FFFFFF] mb-[1.1.rem]">Phone number</h5>
+             <p class="lg:text-[1rem] text-[0.6rem] text-[#FFFFFF]">08067373376</p>   
+             <p class="lg:text-[1rem] text-[0.6rem] text-[#FFFFFF]">08131559252</p>     
+             <p class="lg:text-[1rem] text-[0.6rem] text-[#FFFFFF]">09036610272</p>
           </div>
-          <div>
-             <h5 class="font-bold text-[2rem] text-[#FFFFFF] mb-[1.1rem]">Company</h5>
-             <p class="text-[1rem] text-[#FFFFFF] mb-[1.6rem]"><a target="_blank" href="./blog.html" class="active:text-black">Blogs</a></p>
-             <p class="text-[1rem] text-[#FFFFFF] mb-[1.6rem]"><a href="">Press</a></p>
-             <p class="text-[1rem] text-[#FFFFFF]"><a target="_blank" href="./about.html" class="active:text-black">About Us</a></p>
+          <div class="lg:ml-0 ml-[16rem] lg:mt-0 -mt-44">
+             <h5 class="font-bold lg:text-[2rem] text-[0.8rem] text-[#FFFFFF] lg:mb-[1.1rem] mb-[0.6rem]">Company</h5>
+             <p class="lg:text-[1rem] text-[0.6rem] text-[#FFFFFF] lg:mb-[1.6rem] mb-[0.6rem]"><a target="_blank" href="./blog.html" class="active:text-black">Blogs</a></p>
+             <p class="lg:text-[1rem] text-[0.6rem] text-[#FFFFFF] lg:mb-[1.6rem] mb-[0.6rem]"><a href="">Press</a></p>
+             <p class="lg:text-[1rem] text-[0.6rem] text-[#FFFFFF]"><a target="_blank" href="about.html" class="active:text-black">About Us</a></p>
           </div>
-          <div>
-             <h5 class="font-bold text-[2rem] text-[#FFFFFF] mb-[1.1rem]">Help</h5>
-             <p class="text-[1rem] text-[#FFFFFF] mb-[1.6rem]"><a target="_blank" href="./contact.html" class="active:text-black">Contact</a></p>
-             <p class="text-[1rem] text-[#FFFFFF] mb-[1.6rem]"><a href="./faqs.html" class="active:text-black">FAQs</a></p>
-             <p class="text-[1rem] text-[#FFFFFF]">Get Help</p>
+          <div class="lg:ml-0 ml-[16rem] lg:mt-0 mt-5">
+             <h5 class="font-bold lg:text-[2rem] text-[0.8rem] text-[#FFFFFF] lg:mb-[1.1rem] mb-[0.6rem]">Help</h5>
+             <p class="lg:text-[1rem] text-[0.6rem] text-[#FFFFFF] lg:mb-[1.6rem] mb-[0.6rem]"><a target="_blank" href="contact.html" class="active:text-black">Contact</a></p>
+             <p class="lg:text-[1rem] text-[0.6rem] text-[#FFFFFF] lg:mb-[1.6rem] mb-[0.6rem]"><a href="./faqs.html" class="active:text-black">FAQs</a></p>
+             <p class="lg:text-[1rem] text-[0.6rem] text-[#FFFFFF]">Get Help</p>
           </div>
          </div>
-         <div>
-            <h5 class="font-bold text-[2rem] text-[#FFFFFF] mb-[1.1rem]">Address</h5>
-            <p class="w-[24.1rem] h-[3rem] text-[1rem] text-white">The city of Refugee. No 14, Station <br> Road, Along Royalton Hotel, GRA, Ilorin.</p>
-        </div>
+         <div class="lg:mt-0 mt-5">
+             <h5 class="font-bold lg:text-[2rem] text-[0.8rem] text-[#FFFFFF] lg:mb-[1.1rem] mb-[0.6rem]">Addresses</h5>
+             <p class="lg:w-[24.1rem] w-[11.3rem] lg:h-[3rem] h-[2.3rem] lg:text-[1rem] text-[0.6rem] text-white">The city of Refugee. No 14, Station <br> Road, Along Royalton Hotel, GRA, Ilorin.</p>
+         </div>
         </section>
  
-         <div class="w-[25.4rem] h-[3.9rem] bg-white rounded-[2.5rem] mt-[7.6rem] relative float-end mr-[1.8rem]">
-             <input type="email" placeholder="Enter your email" required class="input bg-transparent ml-[0.9rem] text-[1.5rem] my-[1.03rem] font-[Inter] text-[#000000]">
-             <button type="submit" class="w-[8.3rem] h-[2.rem] bg-[#E12BDA] rounded-[2.5rem] text-[#FFFFFF] text-[1.1rem] px-[1.5rem] py-[0.6rem] absolute top-[0.6rem] right-[0.9rem]">Subscribe</button>
+         <div class="lg:w-[35.9rem] w-[20.4rem] lg:h-[6.3rem] h-[2.5rem] bg-white rounded-[2.5rem] lg:mt-[7.6rem] mt-[4.5rem] relative lg:float-end lg:mr-[1.8rem] mr-[1.6rem]">
+             <input type="email" placeholder="Enter your email" required class="input bg-transparent lg:ml-[2.5rem] ml-[1rem] lg:text-[1rem] text-[0.6rem] lg:my-[2.5rem] my-[0.9rem] font-[Inter] text-[#000000]">
+             <button type="submit" class="lg:w-[8.3rem] w-[5.5rem] lg:h-[3.3rem] h-[2rem] lg:bg-[#801675] bg-[#C837AB] lg:rounded-[2.5rem] rounded-[2.1rem] text-[#FFFFFF] lg:text-[1.1rem] text-[0.6rem] lg:px-[1.5rem] px-[1.3rem] py-[0.6rem] absolute lg:top-[1.5rem] top-[0.2rem] lg:right-[1.5rem] right-[0.3rem]">Subscribe</button>
          </div>
-        </footer>
+     </footer>
+    <script src="./main.js"></script>
 </body>
 </html>
